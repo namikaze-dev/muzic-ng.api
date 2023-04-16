@@ -2,7 +2,7 @@ const { format, createLogger, transports } = require("winston");
 const config = require('./config');
 
 const devLogFormat = format.printf(({ level, message }) => {
-  return `[${level}]: ${message}`;
+  return `[${level.toUpperCase()}]: ${message}`;
 });
 
 const logger = createLogger({
