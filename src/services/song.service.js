@@ -5,7 +5,7 @@ function SongService(Song) {
 
     async function addSong(payload) {
         const song = new Song(payload);
-        return Song.addUser(song);
+        return await Song.create(song);
     }
 
     return {
