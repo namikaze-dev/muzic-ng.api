@@ -9,7 +9,6 @@ const config = {
     mongoose: {
         url: process.env.DSN,
         options: {
-            useCreateIndex: true,
             useNewUrlParser: true,
             useUnifiedTopology: true,
             dbName: process.env.DB_NAME,
