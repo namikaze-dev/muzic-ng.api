@@ -1,4 +1,4 @@
-const Song = require("./song");
+const Song = require("./song.model");
 
 module.exports = {
     Song,
