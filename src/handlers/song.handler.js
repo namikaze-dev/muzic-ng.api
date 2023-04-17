@@ -76,8 +76,8 @@ module.exports = router;
  * @swagger
  * /songs/increment-plays/{id}:
  *   post:
- *     summary: Increment the downloads count of song with {id}
- *     description: Increment the downloads count of song with {id}
+ *     summary: Increment the plays count of song with {id}
+ *     description: Increment the plays count of song with {id}
  *     tags: [Song]
  *     parameters:
  *       - in: path
