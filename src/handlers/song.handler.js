@@ -7,12 +7,12 @@ router.get("/songs", async (req, res) => {
     res.send({ songs });
 });
 
-router.get("/songs/sponsored", async (req, res) => {
+router.get("/songs/trends/sponsored", async (req, res) => {
     const songs = await songService.getSponsoredSongs();
     res.send({ songs });
 });
 
-router.get("/songs/trending", async (req, res) => {
+router.get("/songs/trends/weekly", async (req, res) => {
     const songs = await songService.getTrendingSongs();
     res.send({ songs });
 });
@@ -35,10 +35,10 @@ module.exports = router;
 
 /**
  * @swagger
- * /songs/trending:
+ * /songs/trends/weekly:
  *   get:
- *     summary: Get trending songs
- *     description: Returns a list of all currently trending songs.
+ *     summary: Get weekly trending songs
+ *     description: Returns a list of all weekly trending songs.
  *     tags: [Song]
  *     responses:
  *       "200":
