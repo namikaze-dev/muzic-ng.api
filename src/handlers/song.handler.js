@@ -12,6 +12,11 @@ router.get("/songs/sponsored", async (req, res) => {
     res.send({ songs });
 });
 
+router.get("/songs/trending", async (req, res) => {
+    const songs = await songService.getTrendingSongs();
+    res.send({ songs });
+});
+
 router.post("/songs", async (req, res) => {
     // const {  } = req.body;
     // const song = await songService.addSong(payload);

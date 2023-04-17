@@ -7,6 +7,10 @@ function SongService(Song) {
         return await Song.find({ category: ["sponsored"] });
     }
 
+    async function getTrendingSongs() {
+        return await Song.find({ category: ["trending"] });
+    }
+
     async function addSong(payload) {
         const song = new Song(payload);
         return await Song.create(song);
@@ -15,6 +19,7 @@ function SongService(Song) {
     return {
         getSongs,
         getSponsoredSongs,
+        getTrendingSongs,
         addSong,
     };
 }
