@@ -24,3 +24,32 @@ router.post("/songs", async (req, res) => {
 });
 
 module.exports = router;
+
+
+/**
+ * @swagger
+ * tags:
+ *   name: Song
+ *   description: Songs Management and retrieval
+ */
+
+/**
+ * @swagger
+ * /songs/trending:
+ *   get:
+ *     summary: Get trending songs
+ *     description: Returns a list of all currently trending songs.
+ *     tags: [Song]
+ *     responses:
+ *       "200":
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 songs:
+ *                   type: array
+ *                   items: 
+ *                     $ref: '#/components/schemas/Song'
+ */

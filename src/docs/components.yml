@@ -1,0 +1,22 @@
+components:
+  schemas:
+    Song:
+      type: object
+      properties:
+        artiste: string
+        audio_url: string
+        date_released: date
+        downloads: number
+        id: string
+        image_url: string
+        plays: number
+        title: string
+      example:
+        artiste: string
+        audio_url: string
+        date_released: date
+        downloads: number
+        id: string
+        image_url: string
+        plays: number
+        title: string
