@@ -20,3 +20,9 @@ components:
         image_url: string
         plays: number
         title: string
+
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
