@@ -23,6 +23,16 @@ const Song = new mongoose.Schema(
             type: Date,
             required: true,
         },
+        plays: {
+            type: Number,
+            required: true,
+            default: 0,
+        },
+        downloads: {
+            type: Number,
+            required: true,
+            default: 0,
+        },
         category: [
             {
                 type: String,
