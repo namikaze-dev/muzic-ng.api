@@ -1,3 +1,7 @@
+const mongoose = require("mongoose");
+const httpStatus = require("http-status");
+const HTTPError = require("../utils/http.error");
+
 function SongService(Song) {
     async function getSongs() {
         return await Song.find({});
@@ -17,17 +21,43 @@ function SongService(Song) {
     }
 
     async function incrementPlays(id) {
-        const song = await Song.findOne({ _id: id });
-        song.plays += 1
-        await song.save();
-        return song;
+        try {
+            const song = await Song.findOne({ _id: id });
+            if (!song) {
+                throw new HTTPError(
+                    httpStatus.NOT_FOUND,
+                    `Song with id:${id} does not exist`
+                );
+            }
+            song.plays += 1;
+            await song.save();
+            return song;
+        } catch (err) {
+            if (err instanceof mongoose.Error) {
+                throw new HTTPError(httpStatus.BAD_REQUEST, "Invalid ObjectId");
+            }
+            throw err;
+        }
     }
 
     async function incrementDownloads(id) {
-        const song = await Song.findOne({ _id: id });
-        song.downloads += 1
-        await song.save();
-        return song;
+        try {
+            const song = await Song.findOne({ _id: id });
+            if (!song) {
+                throw new HTTPError(
+                    httpStatus.NOT_FOUND,
+                    `Song with id:${id} does not exist`
+                );
+            }
+            song.downloads += 1;
+            await song.save();
+            return song;
+        } catch (err) {
+            if (err instanceof mongoose.Error) {
+                throw new HTTPError(httpStatus.BAD_REQUEST, "Invalid ObjectId");
+            }
+            throw err;
+        }
     }
 
     return {
