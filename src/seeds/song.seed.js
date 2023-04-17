@@ -11,6 +11,7 @@ const songs = [
         audio_url:
             "https://www.val9ja.com/wp-content/uploads/2023/01/Asake_-_Yoga.mp3",
         date_released: "30 January 2023",
+        category: ["trending"],
     },
     {
         title: "peace sound my love",
@@ -18,6 +19,7 @@ const songs = [
         image_url: "https://muzic.ng/Covers/IMG-20230226-WA0053.jpg",
         audio_url: "https://muzic.ng/Songs/Peace-Sound-hpboy-in-love.m4a",
         date_released: "28 February 2023",
+        category: ["trending"],
     },
     {
         title: "Ojemba ft Olamide",
@@ -27,6 +29,7 @@ const songs = [
         audio_url:
             "https://cdn.xclusiveloaded.com/wp-content/uploads/2023/01/Phyno_Ft_Olamide_-_Ojemba.mp3",
         date_released: "28 January 2023",
+        category: ["trending"],
     },
     {
         title: "Pray for Nigeria",
@@ -34,6 +37,7 @@ const songs = [
         image_url: "https://muzic.ng/Covers/IMG-20230226-WA0027.jpg",
         audio_url: "https://muzic.ng/Songs/RRAY FOR NIGERIA mp3",
         date_released: "2 March 2023",
+        category: ["trending"],
     },
     {
         title: "Bienvenue ft Ruger",
@@ -43,6 +47,7 @@ const songs = [
         audio_url:
             "https://cdn.xclusiveloaded.com/wp-content/uploads/2023/02/DJ_Neptune_Ft_Ruger_-_Bienvenue.mp3",
         date_released: "1 February 2023",
+        category: ["trending"],
     },
     {
         title: "Let there be light ft Seyi Vibes",
@@ -52,6 +57,7 @@ const songs = [
         audio_url:
             "https://naijaloaded.store/wp-content/uploads/2023/02/Zlatan-Let-There-Be-Light-ft.-Seyi-Vibez.mp3",
         date_released: "2 February 2023",
+        category: ["trending"],
     },
 ];
 
