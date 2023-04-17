@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const songCategories = require("../config/song.categories");
 
 const Song = new mongoose.Schema(
     {
@@ -22,6 +23,12 @@ const Song = new mongoose.Schema(
             type: Date,
             required: true,
         },
+        category: [
+            {
+                type: String,
+                enum: songCategories,
+            },
+        ],
     },
     {
         timestamps: true,
