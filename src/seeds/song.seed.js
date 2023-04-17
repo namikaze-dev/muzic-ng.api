@@ -59,6 +59,72 @@ const songs = [
         date_released: "2 February 2023",
         category: ["trending"],
     },
+    {
+        title: "Style",
+        artiste: "Harvest",
+        image_url: "https://muzic.ng/Covers/IMG-20230409-WA0029.jpg",
+        audio_url: "https://muzic.ng/Songs/Harvest-Style.mp3",
+        date_released: "10 April 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Hustle",
+        artiste: "KenyWideBoy",
+        image_url: "https://muzic.ng/Covers/IMG-20230409-WA0052.jpg",
+        audio_url: "https://muzic.ng/Songs/KENYWIDEBOI-Hustle.m4a",
+        date_released: "10 April 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Badman",
+        artiste: "Oranzickez",
+        image_url: "https://muzic.ng/Covers/IMG-20230405-WA0016.jpg",
+        audio_url: "https://muzic.ng/Songs/oranzickez-Badman.mp3",
+        date_released: "5 April 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Illuminati ft Danjuela",
+        artiste: "Ad Sweetlife",
+        image_url: "https://muzic.ng/Covers/IMG-20230327-WA0048.jpg",
+        audio_url:
+            "https://muzic.ng/SSongsAD Sweetlife x Danjuela_-_ILLUMINATY.mp3",
+        date_released: "30 March 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Title Anabi bawasa Dole muso Anabi",
+        artiste: "Sultan Massaka",
+        image_url: "https://muzic.ng/Covers/IMG-20230327-WA0038.jpg",
+        audio_url:
+            "https://muzic.ng/Songs/zakiru masssaka agaie_mixx.wav(0).mp3",
+        date_released: "27 March 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Better for You ",
+        artiste: "Berny ",
+        image_url: "https://muzic.ng/Covers/IMG-20230316-WA0045.jpg",
+        audio_url: "https://muzic.ng/Songs/better-for-you-berny.mp3",
+        date_released: "16 March 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "peace sound my love",
+        artiste: "HpBoy",
+        image_url: "https://muzic.ng/Covers/IMG-20230226-WA0053.jpg",
+        audio_url: "https://muzic.ng/Songs/Peace-Sound-hpboy-in-love.m4a",
+        date_released: "28 February 2023",
+        category: ["sponsored"],
+    },
+    {
+        title: "Pray for Nigeria",
+        artiste: "S.A SOLUTION & his melodies",
+        image_url: "https://muzic.ng/Covers/IMG-20230226-WA0027.jpg",
+        audio_url: "https://muzic.ng/Songs/RRAY FOR NIGERIA mp3",
+        date_released: "2 March 2023",
+        category: ["sponsored"],
+    },
 ];
 
 const seedSongs = async () => {
