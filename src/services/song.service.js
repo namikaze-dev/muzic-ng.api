@@ -3,6 +3,10 @@ function SongService(Song) {
         return await Song.find({});
     }
 
+    async function getSponsoredSongs() {
+        return await Song.find({ category: ["sponsored"] });
+    }
+
     async function addSong(payload) {
         const song = new Song(payload);
         return await Song.create(song);
@@ -10,6 +14,7 @@ function SongService(Song) {
 
     return {
         getSongs,
+        getSponsoredSongs,
         addSong,
     };
 }

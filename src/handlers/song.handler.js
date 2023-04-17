@@ -7,6 +7,11 @@ router.get("/songs", async (req, res) => {
     res.send({ songs });
 });
 
+router.get("/songs/sponsored", async (req, res) => {
+    const songs = await songService.getSponsoredSongs();
+    res.send({ songs });
+});
+
 router.post("/songs", async (req, res) => {
     // const {  } = req.body;
     // const song = await songService.addSong(payload);
