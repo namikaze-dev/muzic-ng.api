@@ -102,7 +102,7 @@ module.exports = router;
  *             example:
  *               message: Invalid ObjectId
  *       "404":
- *         description: Bad Request
+ *         description: Not Found
  *         content:
  *           application/json:
  *             schema:
@@ -141,7 +141,7 @@ module.exports = router;
  *             example:
  *               message: Invalid ObjectId
  *       "404":
- *         description: Bad Request
+ *         description: Not Found
  *         content:
  *           application/json:
  *             schema:
