@@ -16,11 +16,27 @@ function SongService(Song) {
         return await Song.create(song);
     }
 
+    async function incrementPlays(id) {
+        const song = await Song.findOne({ _id: id });
+        song.plays += 1
+        await song.save();
+        return song;
+    }
+
+    async function incrementDownloads(id) {
+        const song = await Song.findOne({ _id: id });
+        song.downloads += 1
+        await song.save();
+        return song;
+    }
+
     return {
         getSongs,
         getSponsoredSongs,
         getTrendingSongs,
         addSong,
+        incrementPlays,
+        incrementDownloads,
     };
 }
 

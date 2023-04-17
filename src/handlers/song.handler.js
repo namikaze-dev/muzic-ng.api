@@ -23,8 +23,17 @@ router.post("/songs", async (req, res) => {
     // res.send({ song });
 });
 
-module.exports = router;
+router.post("/songs/increment-plays/:id", async (req, res) => {
+    const song = await songService.incrementPlays(req.params.id);
+    res.send({ song });
+});
 
+router.post("/songs/increment-downloads/:id", async (req, res) => {
+    const song = await songService.incrementDownloads(req.params.id);
+    res.send({ song });
+});
+
+module.exports = router;
 
 /**
  * @swagger
@@ -50,6 +59,6 @@ module.exports = router;
  *               properties:
  *                 songs:
  *                   type: array
- *                   items: 
+ *                   items:
  *                     $ref: '#/components/schemas/Song'
  */
