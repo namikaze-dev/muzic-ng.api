@@ -14,6 +14,9 @@ const config = {
             dbName: process.env.DB_NAME,
         },
     },
+    cors: {
+        origin: "*",
+    },
 };
 
 module.exports = config;
